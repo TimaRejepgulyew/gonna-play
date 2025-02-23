@@ -1,0 +1,26 @@
+{
+    "GameList": {
+        "GAMES_IN_CITY": "Games in {{city}}",
+        "GAME_TYPE_FRIENDLY": "Friendly",
+        "GAME_TYPE_RANKED": "Ranked",
+        "GAME_TYPE_TEAM_DRAFT": "Team Draft",
+        "GAME_STATUS_PENDING": "Pending",
+        "GAME_STATUS_ACTIVE": "Active",
+        "GAME_STATUS_COMPLETED": "Completed",
+        "GAME_PLAYER_LEVEL_AMATEUR": "Amateur",
+        "GAME_PLAYER_LEVEL_MASTER": "Master",
+        "GAME_PLAYER_LEVEL_LEGEND": "Legend"
+    },
+    "Shared": {
+        "MINUTES": "{{minutes}} min"
+    },
+    "GameDetail": {
+        "SEATS": "Seats",
+        "LIGHTING": "Lighting",
+        "SHOWER": "Shower",
+        "PARKING": "Parking",
+        "CHANGE_ROOM": "Change Room",
+        "JERSEYS": "Jerseys",
+        "BALLS": "Balls"
+    }
+}

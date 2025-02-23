@@ -1,0 +1,26 @@
+{
+    "GameList": {
+        "GAMES_IN_CITY": "Игры в {{city}}",
+        "GAME_TYPE_FRIENDLY": "Дружественная игра",
+        "GAME_TYPE_RANKED": "Рейтинговая игра",
+        "GAME_TYPE_TEAM_DRAFT": "Командный драфт",
+        "GAME_STATUS_PENDING": "Ожидание",
+        "GAME_STATUS_ACTIVE": "Активный",
+        "GAME_STATUS_COMPLETED": "Завершенный",
+        "GAME_PLAYER_LEVEL_AMATEUR": "Любитель",
+        "GAME_PLAYER_LEVEL_MASTER": "Мастер",
+        "GAME_PLAYER_LEVEL_LEGEND": "Легенда"
+    },
+    "GameDetail": {
+        "SEATS": "Трибуны",
+        "LIGHTING": "Освещение",
+        "SHOWER": "Душевые",
+        "PARKING": "Парковка",
+        "CHANGE_ROOM": "Переодевалка",
+        "JERSEYS": "Манишки",
+        "BALLS": "Мячи"
+    },
+    "Shared": {
+        "MINUTES": "{{minutes}} мин"
+    }
+}

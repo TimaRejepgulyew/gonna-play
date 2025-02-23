@@ -1,6 +1,6 @@
 import type { NativeStackScreenProps } from "@react-navigation/native-stack";
 
-import type { Game } from "@/screens/GameList/types";
+import type { GameListItem } from "@/api/gameQueries/types";
 
 declare global {
   namespace ReactNavigation {
@@ -19,7 +19,7 @@ export type TabsRootScreenProps<Screen extends keyof TabsParamList> =
 
 export type MainStackParamList = {
   GameList: undefined;
-  GameDetail: { game: Game };
+  GameDetail: { game: GameListItem };
   SearchUsers: undefined;
 };
 

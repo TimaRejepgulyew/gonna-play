@@ -1,8 +1,10 @@
 import { useCallback } from "react";
-import { TouchableOpacity } from "react-native";
+import { TouchableOpacity, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import Feather from "@expo/vector-icons/Feather";
 import Ionicons from "@expo/vector-icons/Ionicons";
+
+import colors from "@/theme/colors";
 
 import type { MainScreenProps } from "@/navigation/types";
 
@@ -18,25 +20,23 @@ export default function GameListHeader() {
   }, [navigation]);
 
   return (
-    <>
+    <View className={classNames.container}>
       <TouchableOpacity onPress={toSearchUsers}>
-        <Feather
-          className="px-4"
-          style={{ paddingHorizontal: 16 }}
-          name="search"
-          size={24}
-          color="black"
-        />
+        <Feather name="search" size={24} color={colors.secondary} />
       </TouchableOpacity>
       <TouchableOpacity onPress={toNotifications}>
         <Ionicons
-          className="px-4"
-          style={{ paddingHorizontal: 16 }}
+          className={classNames.notificationIcon}
           name="notifications"
-          size={24}
-          color="black"
+          size={20}
+          color={colors.grey[400]}
         />
       </TouchableOpacity>
-    </>
+    </View>
   );
 }
+
+const classNames = {
+  container: "flex-row justify-between items-center gap-4 px-4",
+  notificationIcon: "bg-gray-100 rounded-full p-2",
+} as const;
