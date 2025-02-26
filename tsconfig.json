@@ -3,7 +3,8 @@
   "compilerOptions": {
     "strict": true,
     "baseUrl": ".",
-    "types": ["react-native"],
+    "types": [],
+    "typeRoots": ["./node_modules/@types", "./@types", "./src/@types"],
     "paths": {
       "@/*": ["./app/*"],
       "api/*": ["./app/api/*"],
@@ -11,8 +12,7 @@
       "components/*": ["./app/components/*"],
       "screens/*": ["./app/screens/*"],
       "state/*": ["./app/state/*"],
-      "theme/*": ["./app/theme/*"],
-      "~/*": ["./~/*"]
+      "theme/*": ["./app/theme/*"]
     }
   }
 }

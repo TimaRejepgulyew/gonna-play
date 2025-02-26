@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   // Основные цвета
   primary: "#0D9488", // Яркий индиго - современный и энергичный
   secondary: "#64748B",

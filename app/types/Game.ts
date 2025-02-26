@@ -1,4 +1,9 @@
-import { GamePlayerLevel, GameStatus, GameType } from "@/constants/game";
+import {
+  GamePlayerLevel,
+  GameStatus,
+  GameType,
+  PlayerPosition,
+} from "@/constants/game";
 
 export interface Game {
   id: number;
@@ -16,6 +21,13 @@ export interface Game {
   isActive: boolean;
   isPublic: boolean;
   playerPerTeam: number;
+  teamCount: number;
+  substitutions: boolean;
+  substitutes: number;
+  hasTraining: boolean;
+  trainingPrice: number | null;
+  trainingDuration: number | null;
+  trainingTime: Date | null;
   price: number;
   currency: string;
   isFree: boolean;
@@ -27,6 +39,7 @@ export interface Game {
 export interface GameField {
   id: number;
   name: string;
+  images: string[];
   address: string;
   latitude: number;
   longitude: number;
@@ -34,15 +47,32 @@ export interface GameField {
   updatedAt: Date;
   isDeleted: boolean;
   isActive: boolean;
+  attributes: GameFieldAttribute[];
+}
+
+export interface GameFieldAttribute {
+  id: number;
+  name: string;
+  createdAt: Date;
+  updatedAt: Date;
+  isDeleted: boolean;
 }
 
 export interface Player {
   id: number;
   avatar: string;
   createdAt: Date;
-  updatedAt: Date;
-  isDeleted: boolean;
+  email: string;
   isActive: boolean;
-  name: string;
+  isBanned: boolean;
+  isBlocked: boolean;
+  isDeleted: boolean;
+  isVerified: boolean;
   level: GamePlayerLevel;
+  name: string;
+  phoneNumber: string;
+  position: PlayerPosition;
+  updatedAt: Date;
+  userId: number; 
+  
 }

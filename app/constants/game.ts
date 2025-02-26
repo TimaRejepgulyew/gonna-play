@@ -16,6 +16,13 @@ export enum GameStatus {
   Completed,
 }
 
+export enum PlayerPosition {
+  Goalkeeper,
+  Defender,
+  Midfielder,
+  Forward,
+}
+
 export const GameTypeMap: Record<GameType, string> = {
   [GameType.Ranked]: "GAME_TYPE_RANKED",
   [GameType.Friendly]: "GAME_TYPE_FRIENDLY",
@@ -32,4 +39,11 @@ export const GameStatusMap: Record<GameStatus, string> = {
   [GameStatus.Pending]: "GAME_STATUS_PENDING",
   [GameStatus.Active]: "GAME_STATUS_ACTIVE",
   [GameStatus.Completed]: "GAME_STATUS_COMPLETED",
+};
+
+export const PlayerPositionMap: Record<PlayerPosition, string> = {
+  [PlayerPosition.Goalkeeper]: "GOALKEEPER",
+  [PlayerPosition.Defender]: "DEFENDER",
+  [PlayerPosition.Midfielder]: "MIDFIELDER",
+  [PlayerPosition.Forward]: "FORWARD",
 };

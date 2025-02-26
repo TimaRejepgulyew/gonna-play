@@ -1,15 +1,15 @@
 import { useState } from "react";
-import { View } from "react-native";
+import { View, TextInput } from "react-native";
+import { Text } from 'react-native-rapi-ui';
 
-import { Input } from "~/components/ui/input";
-import { Text } from "~/components/ui/text";
+
 
 export default function SearchUsers() {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
     <View>
-      <Input
+      <TextInput
         className="h-10 border border-gray-500 rounded-lg px-2 mb-4"
         placeholder="Search games..."
         value={searchQuery}

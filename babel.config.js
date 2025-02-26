@@ -11,7 +11,6 @@ module.exports = function (api) {
         {
           extensions: [".js", ".jsx", ".ts", ".tsx"],
           alias: {
-            "~": "./~",
             "@": "./app",
             api: "./app/api",
             assets: "./app/assets",

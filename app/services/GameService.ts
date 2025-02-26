@@ -1,4 +1,4 @@
 export class Game {
     
-  constructor({, }) {}
+  constructor(params: Record<string, any> = {}) {}
 }
